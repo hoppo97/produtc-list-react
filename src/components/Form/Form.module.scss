@@ -1,0 +1,64 @@
+.form {
+  padding: 25px;
+  border-radius: 4px;
+  background-color: #FFFEFB;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04);
+  margin: 20px 0;
+    
+  div {
+    padding-bottom: 16px;
+    &:nth-child(2) {
+      label {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  label {
+    display: inline-block;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: #49485E;
+    position: relative;
+    &::after {
+      position: absolute;
+      display: block;
+      content: " ";
+      width: 4px;
+      height: 4px;
+      right: -5px;
+      top: 0;
+      background: #FF8484;
+      border-radius: 4px;
+    }
+  }
+
+  button {
+    width: 100%;
+
+    margin-top: 24px;
+    padding: 10px 0;
+
+    border-radius: 10px; 
+    border: 0;
+    
+    font-weight: 500;
+    background-color: #7BAE73;
+    color: #fff;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    
+    &:disabled {
+      background-color: #EEEEEE;
+      color: #B4B4B4;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: #62a058;
+    }
+  }
+}
